@@ -1,0 +1,272 @@
+body {
+    background-color: rgb(230, 173, 216);
+  }
+  
+  header {
+    font-size: 35px;
+    text-align: left;
+  }
+  
+  main {
+    font-size: 25px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #home .main {
+    color: black;
+    text-align: left;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: 0 10px;
+    color: rgb(0, 0, 0);
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+* {box-sizing: border-box}
+body {margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#games h4 {
+    background:rgba(0, 0, 0, .1)
+}
+
+#about h2, h3, h4 {
+    text-align: left;
+    color: rgb(184, 3, 54);
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff4848;
+    padding: 0 10px;
+    color: rgb(0, 0, 0);
+}
+
+nav {
+ padding: 1.5rem 2rem;
+ background-color: #222831;
+ color: #fff;
+}
+
+.NavMenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.NavMenu li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+.NavMenu li a:hover {
+    background-color: #ec4242;
+    border-radius: 5px;
+}
+
+.NavMenu li a.active {
+    background-color: #bd3737;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 12px 20px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin: 10px;
+    display: none;
+}
+
+.image-gallery {
+    display: block;
+    text-align: center;
+}
+
+.image-item {
+    margin-bottom: 20px;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  article {
+    margin-bottom: 2rem;
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  h1 {color: rgb(128, 0, 36);
+    margin-left: 20px;
+    text-align: left;}
+  h2 h3 h4 h5 h6{
+    color: #23243d;
+    text-align: center;
+  }
+  
+  
+  p {
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 5px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  aside {
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 20px;
+    word-wrap: normal;
+  }
+  
+  image {
+    width: 150px; height: 90px;
+    float: left;
+  }
+  
+  .grid-container{
+    display: grid;
+    grid-template-areas: 'header nav nav' 'main main aside' 'footer footer footer';
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 10px;
+  }
+  .grid-container > div {
+    background-color: rgb(230, 173, 216);
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .hamburger {
+        display: block;
+    }
+
+    .NavMenu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        border: 1px solid #555;
+    }
+
+    .NavMenu.active {
+        display: flex;
+    }
+}
+  .header{grid-area: header;}
+  .menu{grid-area: nav;}
+  .main{grid-area: main;}
+  .aside{grid-area: aside;}
+  .footer{grid-area: footer;}

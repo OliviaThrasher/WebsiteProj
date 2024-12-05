@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Website Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="feedback">
+    <div class="grid-container">
+        <div class="menu" id="nav">
+            <div class="header"><h1>Indie Quest</h1></div>
+            <button class="hamburger" aria-label="Toggle Navigation">
+                &#9776; <!-- This is the hamburger icon -->
+            </button>
+            <ul class="NavMenu">
+                <li><p><a href="index.html" tabindex="1">Home</a></p></li>
+                <li><p><a href="games.html" tabindex="2">Games</a></p></li>
+                <li><p><a href="about.html" tabindex="3">About</a></p></li>
+                <li><p><a href="feedback.html" tabindex="4" class="active">Feedback</a></p></li>
+            </ul>
+        </div>        
+        <div class="main">
+            <h2>Feedback Form</h2>
+    <h3>Please Complete The Following</h3>
+    <form id="myForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="form-group">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br>
+                <div class="error" id="nameError">Name is required.</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <div class="error" id="emailError">Valid email is required.</div>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age">
+                <div class="error" id="ageError">Age is required and must be a positive number.</div>
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <div>
+                    <label>
+                        <input type="radio" name="gender" value="Male"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="Female"> Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="Other"> Other
+                    </label>
+                </div>
+                <div class="error" id="genderError">Please select a gender.</div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Feedback</legend>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your feedback"></textarea>
+                <div class="error" id="messageError">Message is required.</div>
+            </div>
+        </fieldset>
+        <div>
+            <button type="submit" id="submitButton">Submit</button>
+            <button type="reset" id="resetButton">Reset</button>
+        </div>
+    </form>
+        </div>  
+        <div class="footer">
+            <strong>Olivia Thrasher Fall 2024</strong>
+        </div>
+    </div>
+</body>
+</html>

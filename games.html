@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Website Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="menu" id="nav">
+            <div class="header"><h1>Indie Quest</h1></div>
+            <button class="hamburger" aria-label="Toggle Navigation">
+                &#9776; <!-- This is the hamburger icon -->
+            </button>
+            <ul class="NavMenu">
+                <li><p><a href="index.html" tabindex="1">Home</a></p></li>
+                <li><p><a href="games.html" tabindex="2" class="active">Games</a></p></li>
+                <li><p><a href="about.html" tabindex="3">About</a></p></li>
+                <li><p><a href="feedback.html" tabindex="4">Feedback</a></p></li>
+            </ul>
+        </div>        
+        <div class="main">
+            <main>
+                <section id="games">
+                    <h2>Check out these games</h2>
+        
+                    <div class="game">
+                        <h3>Dead Cells</h3>
+                        <p><strong>Developer:</strong> Motion Twin</p>
+                        <p><strong>Genre:</strong> Action-platformer, Roguelike, Metroidvania</p>
+                        <p><strong>Overview:</strong> *Dead Cells* is a fast-paced action game combining roguelike and Metroidvania elements. Players explore procedurally generated levels, fight enemies, and collect powerful upgrades to progress further in the game. Its challenging combat and fluid mechanics have made it a standout in the indie gaming community.</p>
+                        
+                    </div>
+        
+                    <div class="game">
+                        <h3>Stardew Valley</h3>
+                        <p><strong>Developer:</strong> ConcernedApe (Eric Barone)</p>
+                        <p><strong>Genre:</strong> Farming Simulator, RPG</p>
+                        <p><strong>Overview:</strong> In *Stardew Valley*, players inherit a dilapidated farm and work to restore it by growing crops, raising animals, fishing, and building relationships with town residents. Known for its charming pixel art, relaxing gameplay, and deep community interaction, *Stardew Valley* has become a beloved classic in the indie game scene.</p>
+                    </div>
+        
+                    <div class="game">
+                        <h3>Slime Rancher 2</h3>
+                        <p><strong>Developer:</strong> Monomi Park</p>
+                        <p><strong>Genre:</strong> Farming Simulator, First-Person Shooter</p>
+                        <p><strong>Overview:</strong> *Slime Rancher 2* is the sequel to the beloved *Slime Rancher*, bringing even more slimes to collect and new areas to explore. Set in a new, colorful world called the Rainbow Island, players continue their adventure as Beatrix LeBeau, a slime rancher, capturing and raising new slimes. With expanded gameplay, including new features and environments, *Slime Rancher 2* refines the charm and fun of the original while introducing new mechanics to keep players engaged.</p>
+                    </div>                    
+        
+                    <div class="game">
+                        <h3>Hollow Knight</h3>
+                        <p><strong>Developer:</strong> Team Cherry</p>
+                        <p><strong>Genre:</strong> Metroidvania, Action-Adventure</p>
+                        <p><strong>Overview:</strong> *Hollow Knight* is a Metroidvania action game that takes players through an interconnected world filled with enemies, secrets, and challenging platforming. The game is known for its atmospheric design, deep lore, and precise combat mechanics. *Hollow Knight* has become one of the most influential indie games in recent years.</p>
+                    </div>
+        
+                    <div class="game">
+                        <h3>Project Zomboid</h3>
+                        <p><strong>Developer:</strong> The Indie Stone</p>
+                        <p><strong>Genre:</strong> Survival, Sandbox</p>
+                        <p><strong>Overview:</strong> *Project Zomboid* is a survival horror game set in a world overrun by zombies. Players must manage resources, craft tools, and survive as long as possible while fighting off zombies. The game’s deep survival mechanics and attention to detail have earned it a dedicated following over the years.</p>
+                    </div>
+                </section>
+            </main>
+        </div>  
+        <div class="aside" id="games">
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                  <div class="numbertext"><h5>Hollow Knight</h5></div>
+                  <img src="pictures/HollowKnight.webp" style="width:100%">
+                </div>
+                
+                <div class="mySlides">
+                  <div class="numbertext"><h5>Dead Cells</h5></div>
+                  <img src="pictures/deadcells.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides">
+                  <div class="numbertext"><h5>Stardew Valley</h5></div>
+                  <img src="pictures/stardewValley.avif" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext"><h5>Slime Rancher 2</h5></div>
+                    <img src="pictures/slimerancher2.png" style="width:100%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext"><h5>Project Zomboid</h5></div>
+                    <img src="pictures/project-zomboid.avif" style="width:100%">
+                  </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+        </div>
+        <div class="aside">
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="pictures/deadcellssuny.jpg" alt="Dead Cells">
+                    <p class="caption">Dead Cells</p>
+                </div>
+                <div class="image-item">
+                    <img src="pictures/deadcellsgreen.avif" alt="Dead Cells">
+                    <p class="caption">Dead Cells</p>
+                </div>
+                <div class="image-item">
+                    <img src="pictures/deadcellunder.jpg" alt="Dead Cells">
+                    <p class="caption">Dead Cells</p>
+                </div>
+                <div class="image-item">
+                    <img src="pictures/hollowknightgameplay.jpg" alt="Hollow Knight">
+                    <p class="caption">Hollow Knight</p>
+                </div>
+                <div class="image-item">
+                    <img src="pictures/lake_of_unn.jpg" alt="Hollow Knight">
+                    <p class="caption">Hollow Knight</p>
+                </div>
+                <div class="image-item">
+                    <img src="pictures/moreslimerancher2.jpg" alt="Slime Rancher 2>
+                    <p class="caption">Slime Rancher 2</p>
+                </div>
+                <div class="image-item">
+                    <img src="pictures/pinkslime.jpg" alt="Slime Rancher 2">
+                    <p class="caption">Slime Rancher 2</p>
+                </div>
+                <div class="image-item">
+                    <img src="pictures/Slime-Rancher-2-1.webp" alt="Slime Rancher 2">
+                    <p class="caption">Slime Rancher 2</p>
+                </div>
+                <div class="image-item">
+                    <img src="pictures/Stardew_Valley_Fruit_Bats.jpg" alt="Stardew Valley">
+                    <p class="caption">Stardew Valley</p>
+                </div>
+                <div class="image-item">
+                    <img src="pictures/stardewfarm.jpg" alt="Stardew Valley">
+                    <p class="caption">Stardew Valley</p>
+                </div>
+                <div class="image-item">
+                    <img src="pictures/projzomSoup.webp" alt="Project Zomboid">
+                    <p class="caption">Project Zomboid</p>
+                </div>
+                <div class="image-item">
+                    <img src="pictures/projzombottles.png" alt="Project Zomboid">
+                    <p class="caption">Project Zomboid</p>
+                </div>
+                <div class="image-item">
+                    <img src="pictures/projzom.jpg" alt="Project Zomboid">
+                    <p class="caption">Project Zomboid</p>
+                </div>
+            </div>                      
+        </div>
+        <div class="footer">
+            <strong>Olivia Thrasher Fall 2024</strong>
+        </div>
+    </div>
+</body>
+</html>
